@@ -15,7 +15,7 @@ class FantasticView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        // The Main Stuff
+        
         let scheduledColorChange = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { (timer) in
             UIView.animate(withDuration: 2.0) {
                 self.layer.backgroundColor = self.colors[self.colorCounter % 6].cgColor
